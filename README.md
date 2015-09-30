@@ -8,7 +8,9 @@
     第四步：在第三方登录成功的代理方法中，填写Wilddog的oAuth方法登录
 
 
-### 克隆 demo
+### 本地运行
+
+首先确认本机已经安装Xcode 运行环境，然后执行,模拟器或者真机：
 ```
 git clone git@github.com:WildDogTeam/demo-ios-login.git
 cd  demo-ios-login
@@ -28,7 +30,9 @@ Wildchat 需要 Wilddog 来同步和存储数据。您可以在这里[注册](ht
 * [iOS SDK API](https://z.wilddog.com/ios/api)
 * [下载页面](https://www.wilddog.com/download/)
 * [Wilddog FAQ](https://z.wilddog.com/faq/qa)
-
+* [新浪微博开放平台](http://open.weibo.com/)
+* [QQ 互联](http://connect.qq.com/)
+* [微信开放平台](https://open.weixin.qq.com/)
 
 ### License
 MIT
