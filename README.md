@@ -7,7 +7,6 @@
     第三步：在xcode集成您需要的第三方登录SDK（QQ、weixin、weibo）
     第四步：在第三方登录成功的代理方法中，填写Wilddog的oAuth方法登录
 
-
 ### 本地运行
 
 首先确认本机已经安装Xcode 运行环境，然后执行,模拟器或者真机：
@@ -15,6 +14,7 @@
 git clone git@github.com:WildDogTeam/demo-ios-login.git
 cd  demo-ios-login
 ```
+
 ### 注册 Wilddog
 
 Wildchat 需要 Wilddog 来同步和存储数据。您可以在这里[注册](https://www.wilddog.com/my-account/signup)一个免费帐户。
