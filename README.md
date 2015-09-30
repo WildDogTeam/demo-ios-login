@@ -37,4 +37,4 @@ demo-ios-wildchat is built on and with the aid of several  projects. We would li
 
 Open Source:
 
-* [login-demo-ios](https://github.com/firebase/login-demo-ios) Real-time Chat powered by Firebase
+* [logindemo](https://github.com/firebase/login-demo-ios) Real-time Chat powered by Firebase
