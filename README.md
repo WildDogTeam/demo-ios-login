@@ -8,10 +8,14 @@
     第四步：在第三方登录成功的代理方法中，填写Wilddog的oAuth方法登录
 
 
-## 本地运行
+## 克隆 demo
+```
+git clone git@github.com:WildDogTeam/demo-ios-wildchat.git
+cd  demo-ios-wildchat
+```
 
-    git clone git@github.com:WildDogTeam/demo-ios-login.git
-
+## 支持
+如果在使用过程中有任何问题，请提 [issue](https://github.com/WildDogTeam/demo-js-wildchat/issues) ，我会在 Github 上给予帮助。
 
 ## 相关文档
 
@@ -22,6 +26,15 @@
 * [下载页面](https://www.wilddog.com/download/)
 * [Wilddog FAQ](https://z.wilddog.com/faq/qa)
 
+
 ## License
 MIT
 http://wilddog.mit-license.org/
+
+## 感谢 Thanks
+
+demo-ios-wildchat is built on and with the aid of several  projects. We would like to thank the following projects for helping us achieve our goals:
+
+Open Source:
+
+* [login-demo-ios](https://github.com/firebase/login-demo-ios) Real-time Chat powered by Firebase
