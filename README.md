@@ -13,6 +13,9 @@
 git clone git@github.com:WildDogTeam/demo-ios-login.git
 cd  demo-ios-login
 ```
+### 注册 Wilddog
+
+Wildchat 需要 Wilddog 来同步和存储数据。您可以在这里[注册](https://www.wilddog.com/my-account/signup)一个免费帐户。
 
 ## 支持
 如果在使用过程中有任何问题，请提 [issue](https://github.com/WildDogTeam/demo-js-wildchat/issues) ，我会在 Github 上给予帮助。
@@ -37,4 +40,4 @@ demo-ios-wildchat is built on and with the aid of several  projects. We would li
 
 Open Source:
 
-* [logindemo](https://github.com/firebase/login-demo-ios) Real-time Chat powered by Firebase
+* [logindemo](https://github.com/firebase/login-demo-ios) Login powered by Firebase
