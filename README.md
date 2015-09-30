@@ -40,4 +40,4 @@ demo-ios-login is built on and with the aid of several  projects. We would like 
 
 Open Source:
 
-* [logindemo](https://github.com/firebase/login-demo-ios) Login powered by Firebase
+* [loginDemo](https://github.com/firebase/login-demo-ios) Login powered by Firebase
