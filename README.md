@@ -10,8 +10,8 @@
 
 ## 克隆 demo
 ```
-git clone git@github.com:WildDogTeam/demo-ios-wildchat.git
-cd  demo-ios-wildchat
+git clone git@github.com:WildDogTeam/demo-ios-login.git
+cd  demo-ios-login
 ```
 
 ## 支持
