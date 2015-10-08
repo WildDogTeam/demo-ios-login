@@ -1,5 +1,5 @@
 # demo-ios-login
-demo-ios-login是一个基于 Wilddog iOS SDK 开发的一款登录demo，其中实现的功能实例有QQ登录、微信登录、微博登录、匿名登录。
+demo-ios-login 是一个基于 Wilddog iOS SDK 开发登录 demo，其中实现的功能实例有QQ登录、微信登录、微博登录、匿名登录。
 
     Login 步骤
     第一步：打开www.wilddog.com ———— 登录 ———— 创建您的app
