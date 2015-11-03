@@ -123,8 +123,6 @@ static NSString * const kWilddogURL = @"https://<your-wilddog-app>.wilddogio.com
         [self.ref authWithOAuthProvider:@"weixin" parameters:@{@"code":response.code} withCompletionBlock:^(NSError *error, WAuthData *authData) {
             
         }];
-
-
     }
 }
 */

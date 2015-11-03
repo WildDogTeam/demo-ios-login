@@ -29,9 +29,11 @@
 		39102BE31BA182D50032C5CF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 39102BE21BA182D50032C5CF /* libsqlite3.dylib */; };
 		39102BED1BA1A21B0032C5CF /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 39102BEC1BA1A21B0032C5CF /* libiconv.dylib */; };
 		39102BEF1BA1A22E0032C5CF /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 39102BEE1BA1A22E0032C5CF /* libstdc++.dylib */; };
-		398CFD811BB3BA0C004D43B7 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 398CFD761BB3BA0C004D43B7 /* WeiboSDK.bundle */; settings = {ASSET_TAGS = (); }; };
-		398CFD821BB3BA0C004D43B7 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 398CFD791BB3BA0C004D43B7 /* TencentOpenApi_IOS_Bundle.bundle */; settings = {ASSET_TAGS = (); }; };
-		398CFD851BB3BA0C004D43B7 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 398CFD7D1BB3BA0C004D43B7 /* read_me.txt */; settings = {ASSET_TAGS = (); }; };
+		398CFD811BB3BA0C004D43B7 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 398CFD761BB3BA0C004D43B7 /* WeiboSDK.bundle */; };
+		398CFD821BB3BA0C004D43B7 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 398CFD791BB3BA0C004D43B7 /* TencentOpenApi_IOS_Bundle.bundle */; };
+		398CFD851BB3BA0C004D43B7 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 398CFD7D1BB3BA0C004D43B7 /* read_me.txt */; };
+		39A70B681BE86444005E17D8 /* Wilddog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A70B671BE86444005E17D8 /* Wilddog.framework */; };
+		39A70B6A1BE8644C005E17D8 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A70B691BE8644C005E17D8 /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,8 @@
 		398CFD7D1BB3BA0C004D43B7 /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
 		398CFD7E1BB3BA0C004D43B7 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		398CFD7F1BB3BA0C004D43B7 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		39A70B671BE86444005E17D8 /* Wilddog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Wilddog.framework; sourceTree = "<group>"; };
+		39A70B691BE8644C005E17D8 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A70B6A1BE8644C005E17D8 /* JavaScriptCore.framework in Frameworks */,
 				39102BEF1BA1A22E0032C5CF /* libstdc++.dylib in Frameworks */,
 				39102BED1BA1A21B0032C5CF /* libiconv.dylib in Frameworks */,
 				39102BE31BA182D50032C5CF /* libsqlite3.dylib in Frameworks */,
@@ -118,6 +123,7 @@
 				39102BDF1BA182B50032C5CF /* Foundation.framework in Frameworks */,
 				39102BDD1BA182AB0032C5CF /* UIKit.framework in Frameworks */,
 				39102BDB1BA182A10032C5CF /* CoreText.framework in Frameworks */,
+				39A70B681BE86444005E17D8 /* Wilddog.framework in Frameworks */,
 				39102BD91BA182970032C5CF /* CoreTelephony.framework in Frameworks */,
 				39102BD71BA1828D0032C5CF /* Security.framework in Frameworks */,
 				39102BD51BA182840032C5CF /* ImageIO.framework in Frameworks */,
@@ -142,6 +148,7 @@
 		39102B7C1BA130500032C5CF = {
 			isa = PBXGroup;
 			children = (
+				39A70B691BE8644C005E17D8 /* JavaScriptCore.framework */,
 				39102B871BA130500032C5CF /* Login_Demo */,
 				39102BA11BA130500032C5CF /* Login_Demo iOSTests */,
 				39102B861BA130500032C5CF /* Products */,
@@ -227,6 +234,7 @@
 		398CFC8A1BB3A5A6004D43B7 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				39A70B671BE86444005E17D8 /* Wilddog.framework */,
 				398CFD6C1BB3BA0C004D43B7 /* libWeiboSDK */,
 				398CFD791BB3BA0C004D43B7 /* TencentOpenApi_IOS_Bundle.bundle */,
 				398CFD7A1BB3BA0C004D43B7 /* TencentOpenAPI.framework */,
@@ -502,7 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Login_Demo iOS/Library";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Login_Demo iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -521,7 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Login_Demo iOS/Library";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Login_Demo iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
