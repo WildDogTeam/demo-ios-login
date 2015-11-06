@@ -33,7 +33,7 @@
 		398CFD821BB3BA0C004D43B7 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 398CFD791BB3BA0C004D43B7 /* TencentOpenApi_IOS_Bundle.bundle */; };
 		398CFD851BB3BA0C004D43B7 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 398CFD7D1BB3BA0C004D43B7 /* read_me.txt */; };
 		39A70B6A1BE8644C005E17D8 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A70B691BE8644C005E17D8 /* JavaScriptCore.framework */; };
-		EA931E431BECC8E900894C6A /* Wilddog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA931E421BECC8E900894C6A /* Wilddog.framework */; settings = {ASSET_TAGS = (); }; };
+		39DAEF441BECCF56005AC95F /* Wilddog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DAEF431BECCF56005AC95F /* Wilddog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,7 +107,7 @@
 		398CFD7E1BB3BA0C004D43B7 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		398CFD7F1BB3BA0C004D43B7 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		39A70B691BE8644C005E17D8 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		EA931E421BECC8E900894C6A /* Wilddog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Wilddog.framework; sourceTree = "<group>"; };
+		39DAEF431BECCF56005AC95F /* Wilddog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Wilddog.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +122,7 @@
 				39102BE11BA182C20032C5CF /* CoreGraphics.framework in Frameworks */,
 				39102BDF1BA182B50032C5CF /* Foundation.framework in Frameworks */,
 				39102BDD1BA182AB0032C5CF /* UIKit.framework in Frameworks */,
-				EA931E431BECC8E900894C6A /* Wilddog.framework in Frameworks */,
+				39DAEF441BECCF56005AC95F /* Wilddog.framework in Frameworks */,
 				39102BDB1BA182A10032C5CF /* CoreText.framework in Frameworks */,
 				39102BD91BA182970032C5CF /* CoreTelephony.framework in Frameworks */,
 				39102BD71BA1828D0032C5CF /* Security.framework in Frameworks */,
@@ -234,7 +234,7 @@
 		398CFC8A1BB3A5A6004D43B7 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				EA931E421BECC8E900894C6A /* Wilddog.framework */,
+				39DAEF431BECCF56005AC95F /* Wilddog.framework */,
 				398CFD6C1BB3BA0C004D43B7 /* libWeiboSDK */,
 				398CFD791BB3BA0C004D43B7 /* TencentOpenApi_IOS_Bundle.bundle */,
 				398CFD7A1BB3BA0C004D43B7 /* TencentOpenAPI.framework */,
@@ -510,12 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Login_Demo",
-					iOS/Library,
-					"$(PROJECT_DIR)/Login_Demo",
-					iOS/Library,
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Login_Demo iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -534,12 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Login_Demo",
-					iOS/Library,
-					"$(PROJECT_DIR)/Login_Demo",
-					iOS/Library,
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Login_Demo iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
