@@ -1,3 +1,6 @@
 language: objective-c
-xcode_project: Login_Demo.xcodeproj
-xcode_scheme: Login_Demo
+
+script:
+-xctool -project Login_Demo.xcodeproj -scheme Login_Demo －sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+
+- xctool test -project Login_Demo.xcodeproj -scheme Login_DemoTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
