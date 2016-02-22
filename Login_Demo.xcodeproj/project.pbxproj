@@ -106,6 +106,7 @@
 		398CFD7D1BB3BA0C004D43B7 /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
 		398CFD7E1BB3BA0C004D43B7 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		398CFD7F1BB3BA0C004D43B7 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		398DE7141C7AE27C00382148 /* LoginPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginPrefixHeader.pch; sourceTree = "<group>"; };
 		39A70B691BE8644C005E17D8 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		39DAEF431BECCF56005AC95F /* Wilddog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Wilddog.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,6 +174,7 @@
 				39102B8D1BA130500032C5CF /* AppDelegate.m */,
 				39102B8F1BA130500032C5CF /* ViewController.h */,
 				39102B901BA130500032C5CF /* ViewController.m */,
+				398DE7141C7AE27C00382148 /* LoginPrefixHeader.pch */,
 				39102B921BA130500032C5CF /* Main.storyboard */,
 				39102B951BA130500032C5CF /* Images.xcassets */,
 				39102B971BA130500032C5CF /* LaunchScreen.xib */,
@@ -511,6 +513,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+				GCC_PREFIX_HEADER = "Login_Demo iOS/LoginPrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Login_Demo iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -530,6 +533,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+				GCC_PREFIX_HEADER = "Login_Demo iOS/LoginPrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Login_Demo iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

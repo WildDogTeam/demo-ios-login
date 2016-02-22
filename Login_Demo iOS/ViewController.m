@@ -13,7 +13,12 @@
 //#import "WeiboSDK.h"
 //#import <TencentOpenAPI/TencentOAuth.h>
 
-static NSString * const kWilddogURL = @"https://<your-wilddog-app>.wilddogio.com";
+typedef NS_ENUM(NSUInteger,AlertType){
+    QQ,
+    WEIXIN,
+    WEIBO,
+    ANONYMOUSE
+};
 
 @interface ViewController ()  //<TencentSessionDelegate>
 {
@@ -71,12 +76,31 @@ static NSString * const kWilddogURL = @"https://<your-wilddog-app>.wilddogio.com
     
 }
 
+- (void)showEmptyAlertMessage:(AlertType)type
+{
+    NSString *typeString = [NSString string];
+    switch (type) {
+        case 0:
+            typeString = @"“QQ登录”";
+            break;
+        case 1:
+            typeString = @"“微信登录”";
+            break;
+        case 2:
+            typeString = @"“微博登录”";
+            break;
+        default:
+            break;
+    }
+    NSString *alertString = [NSString stringWithFormat:@"请按本工程注释方式 %@",typeString];
+    UIAlertView *alterView = [[UIAlertView alloc]initWithTitle:@"提示" message:alertString delegate:self cancelButtonTitle:@"确定" otherButtonTitles: nil];
+    [alterView show];
+}
 
 #pragma mark - QQ登录
 - (void)QQButtonPressed
 {
-    UIAlertView *alterView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"请在您的工程中按注释方式“QQ登录”" delegate:self cancelButtonTitle:@"确定" otherButtonTitles: nil];
-    [alterView show];
+    [self showEmptyAlertMessage:QQ];
 //    _tencentOAuth = [[TencentOAuth alloc]initWithAppId:@"1234567890" andDelegate:self];
 //    _permissions = [NSArray arrayWithObjects:@"get_user_info", @"get_simple_userinfo", @"add_t", nil];
 //    [_tencentOAuth authorize:_permissions inSafari:NO];
@@ -105,8 +129,7 @@ static NSString * const kWilddogURL = @"https://<your-wilddog-app>.wilddogio.com
 #pragma mark - 微信登录
 - (void)weixinButtonPressed
 {
-    UIAlertView *alterView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"请在您的工程中按注释方式“微信登录”" delegate:self cancelButtonTitle:@"确定" otherButtonTitles: nil];
-    [alterView show];
+    [self showEmptyAlertMessage:WEIXIN];
 //    if ([WXApi isWXAppInstalled] == NO) {
 //        UIAlertView *alterView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"安装微信客户端后才可以登录" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"安装", nil];
 //        [alterView show];
@@ -129,8 +152,7 @@ static NSString * const kWilddogURL = @"https://<your-wilddog-app>.wilddogio.com
 #pragma mark - 微博登陆
 - (void)weiboButtonPressed
 {
-    UIAlertView *alterView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"请在您的工程中按注释方式“微博登录”" delegate:self cancelButtonTitle:@"确定" otherButtonTitles: nil];
-    [alterView show];
+    [self showEmptyAlertMessage:WEIBO];
 //    WBAuthorizeRequest *request = [WBAuthorizeRequest request];
 //    request.redirectURI = @"https://api.weibo.com/oauth2/default.html";
 //    request.scope = @"email,direct_messages_write";
@@ -143,6 +165,7 @@ static NSString * const kWilddogURL = @"https://<your-wilddog-app>.wilddogio.com
 #pragma mark - 匿名登录
 - (void)anonymousButtonPressed
 {
+    //匿名登录需要在 网页端--控制面板--终端用户认证--匿名登录--勾选“允许终端用户匿名登录”
     if([self wilddogIsSetup]){
         [self showProgressAlert];
         [self.ref authAnonymouslyWithCompletionBlock:[self loginBlockForProviderName:@"Anonymous"]];

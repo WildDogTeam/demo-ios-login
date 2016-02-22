@@ -18,8 +18,6 @@
 
 // The Wilddog you want to use for this app
 // You must setup Wilddog Login for the various authentication providers in the Dashboard under Login & Auth.
-static NSString * const kWilddogURL = @"https://<your-wilddog-app>.wilddogio.com";
-
 
 @interface AppDelegate () //<WXApiDelegate,WeiboSDKDelegate>
 
@@ -34,16 +32,18 @@ static NSString * const kWilddogURL = @"https://<your-wilddog-app>.wilddogio.com
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    //Login 步骤
+    
+    
+    //***Login 步骤***
+    
     //第一步：打开www.wilddog.com ———— 登录 ———— 创建您的app
     
     //第二步：管理应用 ———— 终端用户认证 ———— 社交账号登录 ———— 填写相关信息
     
     //第三步：在xcode集成您需要的第三方登录SDK（QQ、weixin、weibo）
     
-    //第四步：在第三方登录成功的代理方法中，填写Wilddog的oAuth方法登录
+    //第四步：在第三方登录成功的代理方法中，填写Wilddog的oAuth方法登录  - (void)authWithOAuthProvider:(NSString *)provider parameters:(NSDictionary *)parameters withCompletionBlock:(void ( ^ ) ( NSError *error , WAuthData *authData ))block;
     
-    //- (void)authWithOAuthProvider:(NSString *)provider parameters:(NSDictionary *)parameters withCompletionBlock:(void ( ^ ) ( NSError *error , WAuthData *authData ))block;
     
     // make sure we have a Wilddog url
     if ([self wilddogIsSetup]) {
@@ -53,7 +53,9 @@ static NSString * const kWilddogURL = @"https://<your-wilddog-app>.wilddogio.com
 /*
      向微信注册
      [WXApi registerApp:@"wx1234567890"];
-    
+*/
+
+/*
      向微博注册
      [WeiboSDK registerApp:@"1234567890"];
      [WeiboSDK enableDebugMode:YES];
@@ -144,9 +146,6 @@ static NSString * const kWilddogURL = @"https://<your-wilddog-app>.wilddogio.com
     }
 }
 */
-
-
-
 
 
 

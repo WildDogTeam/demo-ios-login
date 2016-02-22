@@ -1,0 +1,18 @@
+//
+//  LoginPrefixHeader.pch
+//  Login_Demo
+//
+//  Created by Garin on 16/2/22.
+//  Copyright © 2016年 wilddog. All rights reserved.
+//
+
+#ifndef LoginPrefixHeader_pch
+#define LoginPrefixHeader_pch
+
+
+#define kWilddogURL @"https://<your-wilddog-app>.wilddogio.com"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* LoginPrefixHeader_pch */
